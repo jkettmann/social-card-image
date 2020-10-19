@@ -19,18 +19,22 @@
   padding: 5vmin;
 }
 
-.title {
-  font-family: Montserrat;
-}
-
 .footer {
   border-top: 2px solid #B4EDD2;
   border-bottom: 2px solid #B4EDD2;
-  padding: 20px 0;
+  padding: 10px 0;
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   left: 30px;
   right: 30px;
   text-align: right;
   font-size: 2vmin;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.separator {
+  height: 22px;
+  width: 2px;
+  background: #B4EDD2;
 }

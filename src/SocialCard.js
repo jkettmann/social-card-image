@@ -15,9 +15,10 @@ const SocialCard = ({
   return (
     <div id={id} className={styles.card} style={style}>
       <div className={styles.content}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1>{title}</h1>
+        {subtitle && <div>{subtitle}</div>}
         <div className={styles.footer}>
-          Johannes Kettmann
+          Johannes Kettmann &nbsp;&nbsp;<span className={styles.separator} />&nbsp;&nbsp; jkettmann.com
         </div>
       </div>
     </div>
