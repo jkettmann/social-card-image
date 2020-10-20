@@ -2,6 +2,7 @@
   background: #B4EDD2;
   padding: 20px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .content {
