@@ -6,11 +6,13 @@ const buildUri = ({ queryStringParameters = {} }) => {
     title = "No Title, Yet!",
     width,
     height,
+    description = "",
+    website = "jkettmann.com",
   } = queryStringParameters;
   const dimensions = width && height ? `&width=${width}&height=${height}` : "";
   return {
     id,
-    path: `${cardpath}?id=${id}&title=${title}${dimensions}`,
+    path: `${cardpath}?id=${id}&title=${title}&description=${description}&website=${website}${dimensions}`,
   };
 };
 const getBoundingSize = (uri) => {

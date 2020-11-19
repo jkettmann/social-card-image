@@ -7,6 +7,8 @@ const SocialCard = ({
   title = "Missing Title",
   width = "1024px",
   height = "542px",
+  description = "Johannes Kettmann",
+  website = "jkettmann.com",
 }) => {
   const style = {
     width: width,
@@ -18,7 +20,12 @@ const SocialCard = ({
         <h1>{title}</h1>
         {subtitle && <div>{subtitle}</div>}
         <div className={styles.footer}>
-          Johannes Kettmann &nbsp;&nbsp;<span className={styles.separator} />&nbsp;&nbsp; jkettmann.com
+          {
+            description && description.length > 0 && (
+              <>{description} &nbsp;&nbsp;<span className={styles.separator} />&nbsp;&nbsp;&nbsp;</>
+            )
+          }
+          {website}
         </div>
       </div>
     </div>
